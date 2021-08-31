@@ -11,6 +11,11 @@ public class QueueMain {
 		QueueList.enqueue(secondNode);
 		QueueList.enqueue(thirdNode);
 		QueueList.printQueue();
+		System.out.println("Size is: "+QueueList.size());
+		while(!QueueList.isEmpty()) {
+			QueueList.dequeue();
+			QueueList.printQueue();
 	}
 
+}
 }
