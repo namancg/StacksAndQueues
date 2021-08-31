@@ -13,4 +13,23 @@ public class Stacks<K> {
 	public void printStack() {
 		stackLinkedList.printLinkedList();
 	}
+	public INode pop() {
+		return stackLinkedList.delete();
+		}
+
+	public INode peek() {
+	return stackLinkedList.head;
+	}
+	public boolean isEmpty() {
+	if(stackLinkedList.head != null) {
+		return false;
+	}
+	else 
+	{
+		return true;
+	}
+}
+public int size() {
+	return stackLinkedList.size();
+}
 }
