@@ -10,5 +10,12 @@ public class StackMain {
 	stack.push(secondNode);
 	stack.push(thirdNode);
 	stack.printStack();
+	System.out.println("Top element is: "+stack.peek().getKey());
+	System.out.println("Size is: "+stack.size());
+	System.out.println("Stack afterpopping : ");
+	while(!stack.isEmpty()) {
+		stack.pop();
+	}
+	stack.printStack();
 }
 }
